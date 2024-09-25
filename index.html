@@ -3,81 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FRITT메인페이지</title>
     <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/respond.css">
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <script src="script/jquery-3.5.1.min.js"></script>
+    <script src="script/jquery.bxslider.js"></script>
+    <script src="script/gnb.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
 </head>
 <body>
   <div id="wrap">
+    <div id="mask"></div>
     <div id="header">
         <div class="inner">
             <h1 class="logo"><a href="#"><img src="images/logo.png" alt="logo"></a></h1>
             <div class="lnb">
                 <ul>
                     <li><a href="#">LOGIN</a></li>
-                    <li><a href="#">SEARCH</a></li>
+                    <li class="sch"><a href="#">SEARCH</a></li>
                     <li><a href="#">CART</a></li>
                 </ul>
             </div>
+            <div class="search_wrap">
+                <form action="#" class="search_box">
+                    <fieldset>
+                        <legend class="blind">검색폼</legend>
+                        <input type="search" placeholder="search">
+                        <input type="image" class="searchBtn" src="images/icons/search_2450483D.png" alt="검색">
+                    </fieldset>
+        
+                </form>
+               </div>
             <div class="gnb">
                 <ul>
-                    <li class="main"><a href="#">About</a>
+                    <li><a href="#">About</a>
                         <ul class="sub">
-                            <li>About us</li>
-                            <li>Collection</li>
-                            <li>Notice</li>
-                            <li>Offline</li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Collection</a></li>
+                            <li><a href="#">Notice</a></li>
+                            <li><a href="#">Offline</a></li>
                         </ul>
                     </li>
-                    <li class="main"><a href="#">Special</a>
+                    <li><a href="#">Special</a>
                         <ul class="sub">
-                            <li>Love & Wedding</li>
-                            <li>Better Half Of Me</li>
+                            <li><a href="#">Love & Wedding</a></li>
+                            <li><a href="#">Better Half Of Me</a></li>
                         </ul>
                     </li>
-                    <li class="main"><a href="#">Shop</a>
+                    <li><a href="#">Shop</a>
                         <ul class="sub">
-                            <li>Best</li>
-                            <li>All</li>
-                            <li>Necklace</li>
-                            <li>Ring</li>
-                            <li>Bracelet</li>
-                            <li>Earring</li>
-                            <li>Etc</li>
-                            <li>당일발송</li>
+                            <li><a href="#">Best</a></li>
+                            <li><a href="#">All</a></li>
+                            <li><a href="#">Necklace</a></li>
+                            <li><a href="#">Ring</a></li>
+                            <li><a href="#">Bracelet</a></li>
+                            <li><a href="#">Earring</a></li>
+                            <li><a href="#">Etc</a></li>
                         </ul>
                     </li>
-                    <li class="main"><a href="#">Service</a>
+                    <li><a href="#">Service</a>
                          <ul class="sub">
-                            <li>After Service</li>
-                            <li>Jewelry Care</li>
-                            <li>Official Service</li>
-                            <li>FAQ</li>
+                            <li><a href="#">After Service</a></li>
+                            <li><a href="#">Jewelry Care</a></li>
+                            <li><a href="#">Official Service</a></li>
+                            <li><a href="#">FAQ</a></li>
                          </ul>
                     </li>
                 </ul>
             </div><!--gnb end-->
-            <a href="#" class="btn">menu</a>
-            <div class="m_menu"><!--모바일메뉴-->
-                <ul>
-                    <li class="main"><a href="#">About</a>
-                        <ul class="sub">
+            <div class="mobile-btn"><img src="images/icons/menu24_FFFFF.png" alt="mmenu">
+                <!-- <div class="icon"></div> -->
+            </div>
+            <div class="m_gnb">
+                <dl id="m">
+                    <dt><a href="#">About</a></dt>
+                       <dd>
+                        <ul>
                             <li>About us</li>
                             <li>Collection</li>
                             <li>Notice</li>
                             <li>Offline</li>
                         </ul>
-                    </li>
-                    <li class="main"><a href="#">Special</a>
-                        <ul class="sub">
+                       </dd>
+            
+                    <dt><a href="#">Special</a></dt>
+                       <dd>
+                        <ul>
                             <li>Love & Wedding</li>
                             <li>Better Half Of Me</li>
                         </ul>
-                    </li>
-                    <li class="main"><a href="#">Shop</a>
-                        <ul class="sub">
+                       </dd>
+                   
+                    <dt><a href="#">Shop</a></dt>
+                       <dd>
+                        <ul >
                             <li>Best</li>
                             <li>All</li>
                             <li>Necklace</li>
@@ -85,73 +107,65 @@
                             <li>Bracelet</li>
                             <li>Earring</li>
                             <li>Etc</li>
-                            <li>당일발송</li>
                         </ul>
-                    </li>
-                    <li class="main"><a href="#">Service</a>
-                         <ul class="sub">
-                            <li>After Service</li>
-                            <li>Jewelry Care</li>
-                            <li>Official Service</li>
-                            <li>FAQ</li>
-                         </ul>
-                    </li>
-                </ul>
-            </div><!--m_menu end-->
-        </div>
+                       </dd>
+            
+                    <dt><a href="#">Service</a></dt>
+                        <dd>
+                            <ul>
+                                <li>After Service</li>
+                                <li>Jewelry Care</li>
+                                <li>Official Service</li>
+                                <li>FAQ</li>
+                            </ul>
+                        </dd>
+                  
+                    </dl>
+            </div>
+        </div><!--inner end-->
     </div><!--header end-->
     <div id="visual">
         <ul class="bxslider">
             <li><img src="images/cont_img/Fritt Signature Custom Ring.jpg" alt="sliderimage1"></li>
-            <li><img src="images/cont_img/Diamond Eternity Ring.jpg" alt="sliderimage2"></li>
+            <li><img src="images/cont_img/ProofOfLoveRing.jpg" alt="sliderimage2"></li>
             <li><img src="images/cont_img/In Us Time Ring.jpg" alt="sliderimage3"></li>
             <li><img src="images/cont_img/Pervade into FRITT Part 2..jpg" alt="sliderimage4"></li>
         </ul>
     </div><!--visual end-->
     <div id="contents">
         <div class="container1">
-            <div class="cont1">
-                <div class="box1">
-                    <h2>Classic House <br><span>올해의 컬렉션</span></h2>
+                <div class="cont1">
+                    <h2>Classic House</h2>
+                    <p>올해의 컬렉션</p>
                     <a href="#"><img src="images/c1.jpg" alt="classic of house"></a>
                 </div>
-                <div class="box2">
-                    <h2>Promise Ring for love <br><span>웨딩밴드</span></h2>
+                <div class="cont2">
+                    <h2>Promise Ring for love</h2>
+                    <p>웨딩밴드</p>
                     <a href="#"><img src="images/c2.jpg" alt="promise ring for love"></a>
                 </div>
-            </div>
         </div><!--container1 end-->
         <div class="container2">
             <h1>The Birth of Exquisiteness</h1>
-            <div class="cont2">
-                <h3>Inspired by the shapes of nature and objects, FRITT's jewelry collection reinterprets them with its
-                unique perspective, going beyond the limitations of gold jewelry to present designs of high perfection
-                through the carefully selected techniques of skilled artisans. With delicate and excellent balance,
-                FRITT jewelry boasts the best wearing comfort, allowing you to cherish this delicate and beautiful</p>
-                light forever, even as it becomes imbued with your life and time.</h3>
+            <div class="box">
+                <p>Inspired by the shapes of nature and objects, FRITT's jewelry collection reinterprets them with its</p>
+                <p>unique perspective, going beyond the limitations of gold jewelry to present designs of high perfection</p>
+                <p>through the carefully selected techniques of skilled artisans.</p>
+                <p>With delicate and excellent balance,FRITT jewelry boasts the best wearing comfort,</p>
+                <p>allowing you to cherish this delicate and beautiful light forever,</p>
+                <p>even as it becomes imbued with your life and time.</p>
                 <a href="#" class="more">Read More</a>
             </div>
+            
         </div><!--container2 end-->
         <div class="container3">
             <h2>COLLECTION</h2>
             <a href="#" class="more">Read More</a>
             <div class="cont3">
-                <div class="box3 b1">
-                   <a href="#"><img src="images/cont_img/The scent of a summer.jpg" alt="The scent of a summer"></a> 
-                   <p>The scent of a summer</p>
-                </div>
-                <div class="box3 b2">
-                    <a href="#"><img src="images/cont_img/Pervade into FRITT Part 1.2.jpg" alt="Pervade into FRITT Part 1"></a> 
-                    <p>Pervade into FRITT Part 1</p>
-                 </div>
-                 <div class="box3 b3">
-                    <a href="#"><img src="images/cont_img/Pervade into FRITT Part 2.2.jpg" alt="Pervade into FRITT Part 2"></a> 
-                    <p>Pervade into FRITT Part 2</p>
-                 </div>
-                 <div class="box3 b4">
-                    <a href="#"><img src="images/cont_img/Just love2.jpg" alt="Just love"></a> 
-                    <p>Just love</p>
-                 </div>
+               <div><a href="#"><img src="images/cont_img/cont3_1.jpg" alt="The scent of a summer"></a></div>
+                <div><a href="#"><img src="images/cont_img/cont3_2.jpg" alt="Pervade into FRITT Part 1"></a></div>
+                <div><a href="#"><img src="images/cont_img/cont3_3.jpg" alt="Pervade into FRITT Part 2"></a></div>
+                <div><a href="#"><img src="images/cont_img/cont3_4.jpg" alt="Just love"></a></div>
             </div>
         </div><!--container3 end-->
         <div class="container4">
@@ -159,47 +173,96 @@
                 <h2>NOTICE</h2>
                 <a href="#" class="more">Read More</a>
                 <ul class="nlist">
-                    <li><a href="#">프릿 24' 여름휴가 공지 </a><span>2024-07-20</span></li>
-                    <li><a href="#"></a>프릿 스튜디오 팝업스토어 공지 </a><span>2024-05-07</span></li>
-                    <li><a href="#"></a>2024년 4월 1일 - 일부 제품 금액 인상 공지 </a><span>2024-03-23</span></li>
-                    <li><a href="#"></a>[중요 공지] 3월 18일 본사 이전으로 인한 업무 중지 </a><span>2024-03-18</span></li>
+                    <li><a href="#">프릿 24' 여름 휴가 공지</a><span>2024-07-20</span></li>
+                    <li><a href="#">프릿 스튜디오 팝업스토어 공지 </a><span>2024-05-07</span></li>
+                    <li><a href="#">2024년 4월 1일 - 일부 제품 금액 인상 공지 </a><span>2024-03-23</span></li>
+                    <li><a href="#">[중요] 3월 18일 본사 이전으로 인한 업무 중지 </a><span>2024-03-18</span></li>
                 </ul>
             </div>
-        </div><!--container4 end-->
-        <div class="container5">
             <div class="box5">
                 <h2>BEST REVIEW</h2>
                 <a href="#" class="more">Read More</a>
-                <a href="#"><img src="images/cont_img/review.jpg" alt="bestreview"></a>
+                <div class="review"><a href="#"><img src="images/cont_img/review.jpg" alt="bestreview"></a></div>
             </div>
-        </div><!--container5 end-->
+        </div><!--container4 end-->
     </div><!--contents end-->
     <div id="footer">
         <div class="inner">
             <h1 class="flogo"><a href="#"><img src="images/footer_logo.png" alt="footerlogo"></a></h1>
             <div class="flist">
                 <p>FRITT</p>
-                <address>
-                    16942 | 338,GWANGGYOJUNGANG-RO, SUJI-GU, YONGIN-SI, GYEONGGI-DO, REPUBLIC OF KOREA <br>
-                    유선 상담은 진행하지 않는 점 양해바랍니다.
-                </address>
                 <ul>
                     <li>CEO. 임다빈</li>
                     <li>BUSINESS NO. 149-86-02796</li>
                     <li>contact@projectfritt.co.kr</li>
                     <li>MAIL-ORDER NO. 제2024-용인수지-0715</li>
                     <li>IBK 기업은행/389-127516-04-012 프로젝트프릿(주식회사)</li>
-                </ul>
-                <ul>
-                    <li>FAQ</li>
-                    <li>TEAMS&GUIDE</li>
-                    <li>PRIVACY POLICY</li>
+                    <li><address>16942 |경기도 용인시 수지구 광교중앙로 338</address></li>
                 </ul>
                 <p class="copyright">&copy;FRITT</p>
-                <a href="#" class="sns">sns</a>
             </div>
-        </div><!--footer-->
-    </div>
+            <div class="flist2">
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">TEAMS&GUIDE</a></li>
+                    <li><a href="#">PRIVACY POLICY</a></li>
+                </ul>
+            </div>
+            <a href="#" class="sns"><img src="images/icons/instagram.png" alt="sns"></a>
+           
+        </div>
+    </div><!--footer-->
+   
   </div>
+  <script>
+    //bxslider script code
+    $(function(){
+     $('.bxslider').bxSlider({
+      mode:'horizontal',
+      moveSlides:1,
+      slideMargin:40,
+      infiniteLoop:true,
+      maxSlides:1,
+      speed:400,
+      auto:true,
+      controls:false,
+      responsive:true,
+      autoDirection:'prev'
+     });
+    });
+</Script>
+<script>
+    //모바일메뉴
+     $('.mobile-btn').click(function(){
+        $(this).toggleClass('btn-act');
+        $('.m_gnb').slideToggle();
+    });
+  
+    //펼침메뉴
+    $('dt').click(function(){
+       $(this).next().slideToggle();
+       $(this).next().siblings('dd').slideUp();
+    });
+ </script>
+ <script type="text/javascript">
+    $(document).ready(function(){
+        $(".mobile-btn").click(function(){
+            $("#mask").fadeIn(100);
+            $(".m_gnb").show()//.animate({right: "0"});
+        });
+        $("#mask, .icon").click(function(){
+            $("#mask").fadeOut(100);
+             $(".m_gnb").hide()//.animate({right: "0"});
+        });
+    });
+    </script>
+
+<script>
+    $(".sch").click(
+            function(){
+              $(".search_wrap").stop().slideToggle("fast");
+              return false;
+             });
+</script>
 </body>
 </html>
